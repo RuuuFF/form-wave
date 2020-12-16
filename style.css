@@ -85,6 +85,15 @@ body {
   top: 15px;
   left: 0;
 }
+/* evita clicar pelo celular e aparecer a opção de copiar "email"/"password" */
+.form-control label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .form-control label span {
   display: inline-block;
